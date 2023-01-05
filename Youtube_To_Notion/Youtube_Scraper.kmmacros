@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>681323688.17309296</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>put your script name here</string>
+						<key>Variable</key>
+						<string>script_name</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>put the absolute path ofo the folder containing the script here</string>
+						<key>Variable</key>
+						<string>script_path</string>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Determinnes active youtube tab and gets the url</string>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>set videoPlayingScript to "
+function testPlay() {
+	var vid = document.querySelector('.video-stream');
+	if(!vid.paused) {
+		return true
+	}
+	else {
+		return false
+	}
+}
+testPlay()
+"
+
+tell application "Google Chrome"
+	set YouTubeTabs to a reference to ¬
+		(tabs of windows whose URL contains "youtube")
+	repeat with atab in YouTubeTabs
+		tell atab to ¬
+			execute javascript videoPlayingScript
+		set playing to the result
+		if playing then
+			set youtubeURL to URL of atab
+			return youtubeURL
+		end if
+	end repeat
+end tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>local_youtubeURL</string>
+					</dict>
+					<dict>
+						<key>Buttons</key>
+						<array>
+							<dict>
+								<key>Button</key>
+								<string>OK</string>
+							</dict>
+							<dict>
+								<key>Button</key>
+								<string>Cancel</string>
+								<key>Cancel</key>
+								<true/>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>PromptForUserInput</string>
+						<key>Prompt</key>
+						<string></string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Title</key>
+						<string>Input Entry Details</string>
+						<key>Variables</key>
+						<array>
+							<dict>
+								<key>Default</key>
+								<string></string>
+								<key>Variable</key>
+								<string>local_entry_categories</string>
+							</dict>
+							<dict>
+								<key>Default</key>
+								<string></string>
+								<key>Variable</key>
+								<string>local_entry_mood</string>
+							</dict>
+							<dict>
+								<key>Default</key>
+								<string></string>
+								<key>Variable</key>
+								<string>local_entry_notes</string>
+							</dict>
+							<dict>
+								<key>Default</key>
+								<string></string>
+								<key>Variable</key>
+								<string>local_entry_rating</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Briefly</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>Text</key>
+						<string>cd $KMVAR_script_path
+python3 $KMVAR_script_name &lt;&lt;EOF
+$KMVAR_local_youtubeURL
+$KMVAR_local_entry_categories
+$KMVAR_local_entry_mood
+$KMVAR_local_entry_rating
+$KMVAR_local_entry_notes
+EOF</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>691891168.78146994</real>
+				<key>ModificationDate</key>
+				<real>692590575.21553004</real>
+				<key>Name</key>
+				<string>Youtube_Scraper</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>16BBF381-E362-438F-B343-1FFCCEF6A979</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>00)Global</string>
+		<key>ToggleMacroUID</key>
+		<string>7BE56E34-D174-4AEE-ACE5-A5035AFE937F</string>
+		<key>UID</key>
+		<string>D8F4640E-304A-4AB6-9B7D-D12BBC7DA470</string>
+	</dict>
+</array>
+</plist>

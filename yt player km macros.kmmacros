@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>693008606.96062505</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array/>
+				<key>CreationDate</key>
+				<real>486575765.970276</real>
+				<key>CustomIconData</key>
+				<data>
+				iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJ
+				AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAAL
+				EwEAmpwYAAAAB3RJTUUH4AwVCzMkvJqVjgAAAB1pVFh0
+				Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUH
+				AAAAC0lEQVQI12NgAAIAAAUAAeImBZsAAAAASUVORK5C
+				YII=
+				</data>
+				<key>ModificationDate</key>
+				<real>661320146.40334105</real>
+				<key>Name</key>
+				<string>09)⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>B2A613ED-6129-4394-B291-BC471A771DA8</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>yt player export</string>
+		<key>ToggleMacroUID</key>
+		<string>96BCEB61-F872-4BAE-9257-0418C3C527D6</string>
+		<key>UID</key>
+		<string>C3BABFFD-B551-4295-A85A-A4FC426AAD16</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>693008606.96062505</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Buttons</key>
+						<array>
+							<dict>
+								<key>Button</key>
+								<string>OK</string>
+							</dict>
+							<dict>
+								<key>Button</key>
+								<string>Cancel</string>
+								<key>Cancel</key>
+								<true/>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>PromptForUserInput</string>
+						<key>Prompt</key>
+						<string></string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Title</key>
+						<string>enter playlist name</string>
+						<key>Variables</key>
+						<array>
+							<dict>
+								<key>Default</key>
+								<string></string>
+								<key>Variable</key>
+								<string>local_playlist</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>script_name</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>script_path</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>Text</key>
+						<string>cd $KMVAR_script_path
+python3 $KMVAR_script_name &lt;&lt;EOF
+$KMVAR_local_playlist
+EOF</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>652590197.88223398</real>
+				<key>ModificationDate</key>
+				<real>694372331.64960504</real>
+				<key>Name</key>
+				<string>08)8. playlist-url-generator</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>9F8A6B33-D8A0-4469-8BE3-133311217FB6</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>yt player export</string>
+		<key>ToggleMacroUID</key>
+		<string>96BCEB61-F872-4BAE-9257-0418C3C527D6</string>
+		<key>UID</key>
+		<string>C3BABFFD-B551-4295-A85A-A4FC426AAD16</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>693008606.96062505</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>script_name</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>script_path</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>Text</key>
+						<string>cd $KMVAR_script_path
+python3 $KMVAR_script_name </string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>651626298.68090403</real>
+				<key>ModificationDate</key>
+				<real>694372324.67879105</real>
+				<key>Name</key>
+				<string>07)7. yt update songs</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>3C3B48A9-D890-4469-B88E-BC07CDC0A925</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>yt player export</string>
+		<key>ToggleMacroUID</key>
+		<string>96BCEB61-F872-4BAE-9257-0418C3C527D6</string>
+		<key>UID</key>
+		<string>C3BABFFD-B551-4295-A85A-A4FC426AAD16</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>693008606.96062505</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>set videoPlayingScript to "
+function testPlay() {
+	var vid = document.querySelector('.video-stream');
+	if(!vid.paused) {
+		return true
+	}
+	else {
+		return false
+	}
+}
+testPlay()
+"
+
+tell application "Google Chrome"
+	set YouTubeTabs to a reference to ¬
+		(tabs of windows whose URL contains "youtube")
+	repeat with atab in YouTubeTabs
+		tell atab to ¬
+			execute javascript videoPlayingScript
+		set playing to the result
+		if playing then
+			set youtubeURL to URL of atab
+			return youtubeURL
+		end if
+	end repeat
+end tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>local_youtubeURL</string>
+					</dict>
+					<dict>
+						<key>Buttons</key>
+						<array>
+							<dict>
+								<key>Button</key>
+								<string>OK</string>
+							</dict>
+							<dict>
+								<key>Button</key>
+								<string>Cancel</string>
+								<key>Cancel</key>
+								<true/>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>PromptForUserInput</string>
+						<key>Prompt</key>
+						<string></string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Title</key>
+						<string>Input Entry Name</string>
+						<key>Variables</key>
+						<array>
+							<dict>
+								<key>Default</key>
+								<string></string>
+								<key>Variable</key>
+								<string>local_entry_categories</string>
+							</dict>
+							<dict>
+								<key>Default</key>
+								<string></string>
+								<key>Variable</key>
+								<string>local_entry_mood</string>
+							</dict>
+							<dict>
+								<key>Default</key>
+								<string></string>
+								<key>Variable</key>
+								<string>local_entry_notes</string>
+							</dict>
+							<dict>
+								<key>Default</key>
+								<string></string>
+								<key>Variable</key>
+								<string>local_entry_rating</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>script_name</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>script_path</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Briefly</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>Text</key>
+						<string>cd $KMVAR_script_path
+python3 $KMVAR_script_name &lt;&lt;EOF
+$KMVAR_local_youtubeURL
+$KMVAR_local_entry_categories
+$KMVAR_local_entry_mood
+$KMVAR_local_entry_rating
+$KMVAR_local_entry_notes
+EOF</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>2AC38032-E3A8-4A9A-A33B-FDC5378E3401</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>650558213.84972501</real>
+				<key>ModificationDate</key>
+				<real>694372347.73660898</real>
+				<key>Name</key>
+				<string>06)6. add to notion</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>828B4061-DB10-43D2-AA4E-AC554046DC4C</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>yt player export</string>
+		<key>ToggleMacroUID</key>
+		<string>96BCEB61-F872-4BAE-9257-0418C3C527D6</string>
+		<key>UID</key>
+		<string>C3BABFFD-B551-4295-A85A-A4FC426AAD16</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>693008606.96062505</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>set videoLoopingScript to "
+function testLoop() {
+	var vid = document.querySelector('.video-stream');
+	if(!vid.loop) {
+		vid.loop = true
+	}
+	else {
+		vid.loop = false
+	}
+}
+testLoop()
+"
+
+set videoPlayingScript to "
+function testPlay() {
+	var vid = document.querySelector('.video-stream');
+	if(!vid.paused) {
+		return true
+	}
+	else {
+		return false
+	}
+}
+testPlay()
+"
+
+tell application "Google Chrome"
+	set YouTubeTabs to a reference to ¬
+		(tabs of windows whose URL contains "youtube")
+	repeat with atab in YouTubeTabs
+		tell atab to execute javascript videoPlayingScript
+		set playing to the result
+		if playing then
+			tell atab to execute javascript videoLoopingScript
+		end if
+	end repeat
+end tell
+
+
+
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>652666106.11354303</real>
+				<key>ModificationDate</key>
+				<real>661320151.874632</real>
+				<key>Name</key>
+				<string>10)10. toggle video looping</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>A7BCE2E9-4EB8-4F1D-877D-DE00116849E8</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>yt player export</string>
+		<key>ToggleMacroUID</key>
+		<string>96BCEB61-F872-4BAE-9257-0418C3C527D6</string>
+		<key>UID</key>
+		<string>C3BABFFD-B551-4295-A85A-A4FC426AAD16</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>693008606.96062505</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array/>
+				<key>CreationDate</key>
+				<real>486575765.970276</real>
+				<key>CustomIconData</key>
+				<data>
+				iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJ
+				AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAAL
+				EwEAmpwYAAAAB3RJTUUH4AwVCzMkvJqVjgAAAB1pVFh0
+				Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUH
+				AAAAC0lEQVQI12NgAAIAAAUAAeImBZsAAAAASUVORK5C
+				YII=
+				</data>
+				<key>ModificationDate</key>
+				<real>661320145.73781598</real>
+				<key>Name</key>
+				<string>05)⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>8E88B742-0C5A-4B8C-86A5-67409B6B3AF4</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>yt player export</string>
+		<key>ToggleMacroUID</key>
+		<string>96BCEB61-F872-4BAE-9257-0418C3C527D6</string>
+		<key>UID</key>
+		<string>C3BABFFD-B551-4295-A85A-A4FC426AAD16</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>693008606.96062505</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>
+set videoPlayingScript to "
+function testPlay() {
+	var vid = document.querySelector('.video-stream');
+	if(!vid.paused) {
+		return true
+	}
+	else {
+		return false
+	}
+}
+testPlay()
+"
+
+tell application "Google Chrome"
+	set YouTubeTabs to a reference to ¬
+		(tabs of windows whose URL contains "youtube")
+	set atab to item 1 of the result
+	tell atab to ¬
+		execute javascript ¬
+			"document.getElementsByClassName('ytp-play-button ytp-button')[0].click();"
+end tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>650340953.970559</real>
+				<key>ModificationDate</key>
+				<real>661320145.21038103</real>
+				<key>Name</key>
+				<string>02)2. pause/play song</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>87EB72A6-0CB9-4172-B8D8-10CBEE747225</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>yt player export</string>
+		<key>ToggleMacroUID</key>
+		<string>96BCEB61-F872-4BAE-9257-0418C3C527D6</string>
+		<key>UID</key>
+		<string>C3BABFFD-B551-4295-A85A-A4FC426AAD16</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>693008606.96062505</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>set youtubeVolume to text returned of (display dialog "Enter volume (from 0 to 1)" default answer "" buttons {"Cancel", "Search"} default button "Search")
+
+tell application "Google Chrome"
+	set YouTubeTabs to a reference to ¬
+		(tabs of windows whose URL contains "youtube")
+	repeat with atab in YouTubeTabs
+		tell atab to ¬
+			execute javascript " 
+var vid = document.querySelector('.video-stream');
+		vid.volume = " &amp; youtubeVolume &amp; " ;"
+	end repeat
+end tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>650405995.367854</real>
+				<key>ModificationDate</key>
+				<real>686326445.29982996</real>
+				<key>Name</key>
+				<string>03)3. yt vol</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>1D68310F-B185-4771-9A46-386AB49ED035</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>yt player export</string>
+		<key>ToggleMacroUID</key>
+		<string>96BCEB61-F872-4BAE-9257-0418C3C527D6</string>
+		<key>UID</key>
+		<string>C3BABFFD-B551-4295-A85A-A4FC426AAD16</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>693008606.96062505</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Allowed</key>
+						<string>IncludeInactive</string>
+						<key>MacroActionType</key>
+						<string>ShowPaletteOfMacros</string>
+						<key>Macros</key>
+						<array>
+							<string>C3BABFFD-B551-4295-A85A-A4FC426AAD16</string>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>655161088.05332005</real>
+				<key>ModificationDate</key>
+				<real>693008659.94172704</real>
+				<key>Name</key>
+				<string>. yt player Palette</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>19</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2048</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>52D1C9BC-220C-4FCB-A452-7A8F834AD617</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>yt player export</string>
+		<key>ToggleMacroUID</key>
+		<string>96BCEB61-F872-4BAE-9257-0418C3C527D6</string>
+		<key>UID</key>
+		<string>C3BABFFD-B551-4295-A85A-A4FC426AAD16</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>693008606.96062505</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Destination</key>
+						<string>Variable</string>
+						<key>DestinationVariable</key>
+						<string>local_choice</string>
+						<key>MacroActionType</key>
+						<string>PromptWithList</string>
+						<key>Path</key>
+						<string>/Users/user/Desktop/coding/Python/yt_player/song_list.txt</string>
+						<key>PromptUID</key>
+						<string>77357E27-39A4-4F0F-967C-5030C68BE9B3</string>
+						<key>Source</key>
+						<string>File</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>WindowTitle</key>
+						<string>Pick a song</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>script_name</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>script_path</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>Text</key>
+						<string>cd $KMVAR_script_path
+python3 $KMVAR_script_name &lt;&lt;EOF
+$KMVAR_local_choice
+EOF</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>local_youtubeURL</string>
+					</dict>
+					<dict>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>local_youtubeURL</string>
+									<key>VariableConditionType</key>
+									<string>DoesNotContain</string>
+									<key>VariableValue</key>
+									<string>https:</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>MacroActionType</key>
+								<string>Notification</string>
+								<key>SoundName</key>
+								<string></string>
+								<key>Subtitle</key>
+								<string>%local_youtubeURL%</string>
+								<key>Text</key>
+								<string></string>
+								<key>Title</key>
+								<string>Playing: %local_choice%</string>
+							</dict>
+							<dict>
+								<key>DisplayKind</key>
+								<string>None</string>
+								<key>HonourFailureSettings</key>
+								<true/>
+								<key>IncludeStdErr</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>ExecuteAppleScript</string>
+								<key>Path</key>
+								<string></string>
+								<key>Text</key>
+								<string>set videoPlayingScript to "
+function testPlay() {
+	var vid = document.querySelector('.video-stream');
+	if(!vid.paused) {
+		return true
+	}
+	else {
+		return false
+	}
+}
+testPlay()
+"
+
+set kmInst to system attribute "KMINSTANCE"
+tell application "Keyboard Maestro Engine"
+	set mySearchURL to getvariable "local_youtubeURL" instance kmInst
+end tell
+
+tell application "Google Chrome"
+	set YouTubeTabs to a reference to ¬
+		(tabs of windows whose URL contains "youtube")
+	repeat with atab in YouTubeTabs
+		tell atab to ¬
+			execute javascript videoPlayingScript
+		set playing to the result
+		if playing then
+			set URL of atab to mySearchURL
+			display notification with title "changed URL!"
+		end if
+	end repeat
+end tell</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>Argument</key>
+								<string>1</string>
+								<key>Command</key>
+								<string>WaitForComplete</string>
+								<key>MacroActionType</key>
+								<string>SafariControl</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>WebBrowser</key>
+								<string>Google Chrome</string>
+							</dict>
+							<dict>
+								<key>DisplayKind</key>
+								<string>None</string>
+								<key>HonourFailureSettings</key>
+								<true/>
+								<key>IncludeStdErr</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>ExecuteAppleScript</string>
+								<key>Path</key>
+								<string></string>
+								<key>Text</key>
+								<string>
+	tell application "Google Chrome" to (tabs of window 1 whose URL contains "youtube")
+	set youtubeTabs to item 1 of the result
+	tell application "Google Chrome"
+		execute youtubeTabs javascript "
+	var vid = document.querySelector('.video-stream');
+    	vid.loop = true;
+	vid.focus = true;
+	"
+	end tell
+</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>MacroActionType</key>
+								<string>Notification</string>
+								<key>SoundName</key>
+								<string></string>
+								<key>Subtitle</key>
+								<string>Your choice value was: %local_choice%</string>
+								<key>Text</key>
+								<string>The returned title value was: %local_youtubeURL%</string>
+								<key>Title</key>
+								<string>The script failed to find your song!</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>651629321.67562497</real>
+				<key>ModificationDate</key>
+				<real>694372290.90912104</real>
+				<key>Name</key>
+				<string>04)4. yt play new song</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>1C110ED1-E11C-43B8-AE10-DBAB69472A4C</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>yt player export</string>
+		<key>ToggleMacroUID</key>
+		<string>96BCEB61-F872-4BAE-9257-0418C3C527D6</string>
+		<key>UID</key>
+		<string>C3BABFFD-B551-4295-A85A-A4FC426AAD16</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>693008606.96062505</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Destination</key>
+						<string>Variable</string>
+						<key>DestinationVariable</key>
+						<string>local_choice</string>
+						<key>MacroActionType</key>
+						<string>PromptWithList</string>
+						<key>Path</key>
+						<string>/Users/user/Desktop/coding/Python/yt_player/song_list.txt</string>
+						<key>PromptUID</key>
+						<string>B0B69F13-C3A4-46F9-8CE7-E9B4E8713101</string>
+						<key>Source</key>
+						<string>File</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>WindowTitle</key>
+						<string>Pick a song</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>script_name</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>script_path</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>Text</key>
+						<string>cd $KMVAR_script_path
+/usr/local/bin/python3 $KMVAR_script_name&lt;&lt;EOF
+$KMVAR_local_choice 
+EOF</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>local_youtubeURL</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>DisplayBriefly</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>%local_choice%
+Playing: %local_youtubeURL%</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>set kmInst to system attribute "KMINSTANCE"
+tell application "Keyboard Maestro Engine"
+	set mySearchURL to getvariable "local_youtubeURL" instance kmInst
+end tell
+
+tell application "Google Chrome"
+	set incognitoWindow to (make new window with properties {mode:"incognito"})
+	repeat while loading of active tab of incognitoWindow
+		delay 0.1
+	end repeat
+	set URL of active tab of incognitoWindow to mySearchURL
+end tell
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Argument</key>
+						<string>0.1</string>
+						<key>Command</key>
+						<string>WaitForComplete</string>
+						<key>MacroActionType</key>
+						<string>SafariControl</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>WebBrowser</key>
+						<string>Google Chrome</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>to clickClassName(theClassName, elementNum)
+	tell application "Google Chrome" to (tabs of window 1 whose URL contains "youtube")
+	set youtubeTabs to item 1 of the result
+	tell application "Google Chrome"
+		execute youtubeTabs javascript "document.getElementsByClassName('" &amp; theClassName &amp; "')[" &amp; elementNum &amp; "].click();"
+	end tell
+end clickClassName
+
+clickClassName("yt-simple-endpoint style-scope ytd-video-renderer", 0)</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>	tell application "Google Chrome" to (tabs of window 1 whose URL contains "youtube")
+	set youtubeTabs to item 1 of the result
+	tell application "Google Chrome"
+		execute youtubeTabs javascript "
+	var vid = document.querySelector('.video-stream');
+    	vid.loop = true;
+	vid.focus = true;
+	"
+	end tell
+
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>KeyCode</key>
+								<integer>125</integer>
+								<key>MacroActionType</key>
+								<string>SimulateKeystroke</string>
+								<key>Modifiers</key>
+								<integer>0</integer>
+								<key>ReleaseAll</key>
+								<false/>
+								<key>TargetApplication</key>
+								<dict/>
+								<key>TargetingType</key>
+								<string>Front</string>
+							</dict>
+						</array>
+						<key>CountExpression</key>
+						<string>20</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Repeat</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>KeyCode</key>
+								<integer>126</integer>
+								<key>MacroActionType</key>
+								<string>SimulateKeystroke</string>
+								<key>Modifiers</key>
+								<integer>0</integer>
+								<key>ReleaseAll</key>
+								<false/>
+								<key>TargetApplication</key>
+								<dict/>
+								<key>TargetingType</key>
+								<string>Front</string>
+							</dict>
+						</array>
+						<key>CountExpression</key>
+						<string>6</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Repeat</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>693008603.47266102</real>
+				<key>ModificationDate</key>
+				<real>694372302.68559396</real>
+				<key>Name</key>
+				<string>01)1. yt play song</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>3816F067-3483-4D59-A36C-5BB5BBC4B79F</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>yt player export</string>
+		<key>ToggleMacroUID</key>
+		<string>96BCEB61-F872-4BAE-9257-0418C3C527D6</string>
+		<key>UID</key>
+		<string>C3BABFFD-B551-4295-A85A-A4FC426AAD16</string>
+	</dict>
+</array>
+</plist>
