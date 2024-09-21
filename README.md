@@ -1,7 +1,8 @@
 # Notion_YT_Player
 
 ### Demo
-https://streamable.com/3mew0k
+https://github.com/user-attachments/assets/5161a91c-52a9-43b0-a7f4-b184b4968a48
+
 
 ### Description
 A project meant to simulate a barebones music player using Youtube as the music player and Notion to store songs. Users are able to access and control Youtube quickly and easily while staying focused on other tasks, which removes the annoyance of having to find or unminimize the Youtube tab when you want to adjust volume, change songs, or see what song is playing so you can add it to your song collection. This music player mainly uses python scripts to communicate with the youtube and notion api, and is also intended to be used with Keyboard Maestro in order to get the full functionality of the music player and the ability to input commands from any screen.
