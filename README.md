@@ -1,7 +1,16 @@
 # Notion_YT_Player
 
 ### Demo
+
+Youtube player features:
+
 https://github.com/user-attachments/assets/5161a91c-52a9-43b0-a7f4-b184b4968a48
+
+Scraping demo:
+
+https://github.com/user-attachments/assets/6211d955-ab88-4f82-91d6-53de9d8f4e57
+
+
 
 
 ### Description
